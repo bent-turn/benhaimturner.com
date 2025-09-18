@@ -1,0 +1,98 @@
+header {
+  padding: 20px;
+  text-align: left;
+}
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto auto; 
+  margin-left: 50px;
+  margin-top: 10vh;
+  /*display: flex;
+  justify-content: left; /* horizontal center */
+  align-items: center;    /* vertical center */
+  height: 10px;          /* full viewport height */
+  gap: 0px;              /* space between boxes */
+}
+
+.box {
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  margin: 15px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.rec{ 
+  border-radius: 20px;
+  width: 500px;
+  height: 250px;
+  background-color: blue;
+  margin: 15px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.rec:hover {
+  transform: scale(1.05);
+}
+
+.box.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rec.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#overlay {
+  position: fixed;
+  background-color: blue;
+  border-radius: 20px;
+  pointer-events: auto;
+  z-index: 1000;
+  transition: 
+    top 0.3s ease, 
+    left 0.3s ease, 
+    width 0.3s ease, 
+    height 0.3s ease, 
+    opacity 0.3s ease;
+  opacity: 0;
+  display: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#overlay.visible {
+  opacity: 1;
+  display: block;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
