@@ -1,5 +1,6 @@
 const boxes = document.querySelectorAll('.box, .rec');
 const overlay = document.getElementById('overlay');
+const overlayImg = document.getElementById('overlay-img');
 const closeBtn = overlay.querySelector('.close-btn');
 let activeBox = null;
 
@@ -12,6 +13,7 @@ boxes.forEach(box => {
     const rect = box.getBoundingClientRect();
     box.classList.add('hidden');
     activeBox = box;
+
 
     overlay.style.top = rect.top + 'px';
     overlay.style.left = rect.left + 'px';
@@ -26,6 +28,15 @@ boxes.forEach(box => {
     overlay.style.left = '10vw';
     overlay.style.width = '80vw';
     overlay.style.height = '80vh';
+
+
+    const img = box.querySelector('img');
+    if (!img) return; // No image inside this box, skip
+
+    const imgSrc = img.src; // Get image URL
+
+    // Set overlay image src to this box’s image src
+    overlayImg.src = imgSrc;
   });
 });
 
