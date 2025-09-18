@@ -27,8 +27,8 @@ body {
 
 .box {
   border-radius: 20px;
-  width: 250px;
-  height: 250px;
+  width: 20vw;
+  height: 20vw;
   background-color: blue;
   margin: 15px;
   display: inline-block;
@@ -40,8 +40,8 @@ body {
 
 .rec{ 
   border-radius: 20px;
-  width: 500px;
-  height: 250px;
+  width: 40vw;
+  height: 20vw;
   background-color: blue;
   margin: 15px;
   display: inline-block;
