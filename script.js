@@ -31,7 +31,10 @@ boxes.forEach(box => {
 
 
     const img = box.querySelector('img');
-    if (!img) return; // No image inside this box, skip
+    if (!img) {
+      overlayImg.src = ''; // Clear overlay image if no image in box
+      return; // No image inside this box, skip
+    }
 
     const imgSrc = img.src; // Get image URL
 

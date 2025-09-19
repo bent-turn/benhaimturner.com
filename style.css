@@ -28,7 +28,7 @@ body {
   justify-content: left; /* horizontal center */
   align-items: center;    /* vertical center */
   height: 10px;          /* full viewport height */
-  width: 80vw;;
+  width: 60vw;;
   gap: 0px;              /* space between boxes */
 }
 
@@ -55,7 +55,7 @@ body {
 
 .rec{ 
   border-radius: 20px;
-  width: 40vw;
+  width: 30vw;
   height: 20vw;
   background-color: blue;
   margin: 1vw;
